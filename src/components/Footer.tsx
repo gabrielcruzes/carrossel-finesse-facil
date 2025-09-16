@@ -17,7 +17,7 @@ export const Footer = () => {
         
         <div className="border-t border-secondary-foreground/20 pt-8">
           <p className="text-sm opacity-75">
-            © 2024 Arquivo Secreto do Carrossel Finesse. Todos os direitos reservados.
+            © 2024 O Arquivo Secreto do Carrossel Finesse. Todos os direitos reservados.
           </p>
           <p className="text-xs opacity-60 mt-2">
             Este produto não tem nenhuma garantia de resultados. Os resultados podem variar de pessoa para pessoa.

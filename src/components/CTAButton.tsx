@@ -13,8 +13,7 @@ export const CTAButton = ({ children, onClick, size = "lg", className }: CTAButt
     if (onClick) {
       onClick();
     } else {
-      // Scroll para o final da página ou ação padrão
-      window.open("https://pay.hotmart.com/exemplo", "_blank");
+      window.open("https://payfast.greenn.com.br/134005", "_blank");
     }
   };
 

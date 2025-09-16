@@ -1,9 +1,17 @@
 import { CTAButton } from "./CTAButton";
 import packMockup from "@/assets/pack-mockup.jpg";
+import logo from "@/assets/logo.png";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4">
+    <section className="min-h-screen bg-gradient-hero flex flex-col items-center justify-center px-4">
+      <div className="flex items-center gap-4 mb-8">
+        <img 
+          src={logo} 
+          alt="O Arquivo Secreto do Carrossel Finesse Logo" 
+          className="h-16 w-auto"
+        />
+      </div>
       <div className="container mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left space-y-8">
           <h1 className="text-5xl lg:text-7xl font-black text-primary-foreground leading-tight">
