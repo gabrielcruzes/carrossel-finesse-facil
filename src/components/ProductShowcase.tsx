@@ -1,5 +1,4 @@
 import carouselExamples from "@/assets/carousel-examples.jpg";
-import storiesExamples from "@/assets/stories-examples.jpg";
 
 export const ProductShowcase = () => {
   return (
@@ -10,7 +9,7 @@ export const ProductShowcase = () => {
             O Que Você Vai Receber
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Mais de 50 templates profissionais prontos para usar
+            Carrosseis profissionais editáveis para seu negócio decolar
           </p>
         </div>
         
@@ -29,7 +28,7 @@ export const ProductShowcase = () => {
             <ul className="space-y-4 text-lg">
               <li className="flex items-center gap-3">
                 <span className="text-success">✓</span>
-                <span>15 modelos únicos de carrossel</span>
+                <span>Mais de 10 modelos únicos de carrossel</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-success">✓</span>
@@ -37,47 +36,23 @@ export const ProductShowcase = () => {
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-success">✓</span>
-                <span>Fácil personalização de textos</span>
+                <span>Fácil personalização de textos e cores</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-success">✓</span>
-                <span>Cores e fontes editáveis</span>
+                <span>Formatos otimizados para Instagram</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 lg:order-2">
-            <h3 className="text-3xl font-bold text-secondary">
-              📱 Stories & Posts
-            </h3>
-            <ul className="space-y-4 text-lg">
-              <li className="flex items-center gap-3">
-                <span className="text-success">✓</span>
-                <span>25 templates para Stories</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-success">✓</span>
-                <span>20 layouts para Feed</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-success">✓</span>
-                <span>Modelos para anúncios</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-success">✓</span>
-                <span>Formatos otimizados</span>
-              </li>
-            </ul>
-          </div>
-          <div className="lg:order-1">
-            <img 
-              src={storiesExamples} 
-              alt="Exemplos de Templates de Stories e Posts" 
-              className="rounded-2xl shadow-elegant"
-            />
-          </div>
+        <div className="text-center mt-16">
+          <h3 className="text-2xl font-bold text-muted-foreground mb-4">
+            Todos os templates são 100% editáveis no Canva Gratuito
+          </h3>
+          <p className="text-lg text-muted-foreground">
+            Sem necessidade de Canva Pro - funciona perfeitamente na versão gratuita!
+          </p>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ const benefits = [
   {
     icon: "⚡",
     title: "Economia de Tempo",
-    description: "Crie posts profissionais em menos de 5 minutos"
+    description: "Crie carrosseis profissionais em menos de 5 minutos"
   },
   {
     icon: "🎨",
@@ -23,8 +23,8 @@ const benefits = [
   },
   {
     icon: "📱",
-    title: "Para Todas Redes",
-    description: "Feed, Stories, Anúncios e muito mais"
+    title: "Carrosseis Únicos",
+    description: "Mais de 10 layouts exclusivos para carrossel"
   },
   {
     icon: "🔄",

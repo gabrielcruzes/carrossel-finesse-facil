@@ -8,7 +8,7 @@ export const Footer = () => {
           Não Perca Esta Oportunidade!
         </h2>
         <p className="text-xl mb-8 opacity-90">
-          Transforme seu conteúdo agora e comece a criar posts profissionais em minutos
+          Transforme seu conteúdo agora e comece a criar carrosseis profissionais em minutos
         </p>
         
         <CTAButton size="xl" className="mb-12">

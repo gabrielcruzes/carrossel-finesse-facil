@@ -7,13 +7,13 @@ const testimonials = [
     name: "Marina Silva",
     role: "Empreendedora Digital",
     image: testimonial1,
-    text: "Esses templates salvaram minha vida! Antes eu gastava horas tentando criar posts bonitos. Agora faço tudo em minutos e o engajamento triplicou!"
+    text: "Esses templates de carrossel salvaram minha vida! Antes eu gastava horas tentando criar conteúdo bonito. Agora faço tudo em minutos e o engajamento triplicou!"
   },
   {
     name: "Carlos Mendes", 
     role: "Dono de Restaurante",
     image: testimonial2,
-    text: "Comprei pensando que seria mais um produto qualquer, mas me surpreendi! Os templates são realmente profissionais e fáceis de usar."
+    text: "Comprei pensando que seria mais um produto qualquer, mas me surpreendi! Os carrosseis são realmente profissionais e fáceis de personalizar."
   }
 ];
 
