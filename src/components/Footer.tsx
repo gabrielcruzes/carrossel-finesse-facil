@@ -3,7 +3,7 @@ import { CTAButton } from "./CTAButton";
 export const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground py-20">
-      <div className="container mx-auto max-w-4xl px-4 text-center">
+      <div className="mx-auto w-full max-w-4xl px-4 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold mb-6">
           Não Perca Esta Oportunidade!
         </h2>
@@ -11,7 +11,10 @@ export const Footer = () => {
           Transforme seu conteúdo agora e comece a criar carrosseis profissionais em minutos
         </p>
         
-        <CTAButton size="xl" className="mb-12">
+        <CTAButton
+          size="xl"
+          className="w-full max-w-[calc(100%-4px)] mx-[2px] sm:w-auto sm:max-w-none sm:mx-auto mb-12"
+        >
           🚀 GARANTIR MEUS TEMPLATES AGORA
         </CTAButton>
         

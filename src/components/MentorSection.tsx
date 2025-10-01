@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import mentorPhoto from "@/assets/mentor-photo.jpg";
+import mentorPhoto from "@/assets/mentor-photo.png";
 
 export const MentorSection = () => {
   return (
@@ -11,19 +11,19 @@ export const MentorSection = () => {
           </h2>
         </div>
         
-        <Card className="max-w-4xl mx-auto p-8 lg:p-12">
-          <div className="grid md:grid-cols-[300px,1fr] gap-8 items-center">
-            <div className="mx-auto">
+        <Card className="w-full max-w-4xl mx-auto p-8 lg:p-12">
+          <div className="grid md:grid-cols-[420px,1fr] gap-8 items-center w-full">
+            <div className="mx-auto w-full">
               <img 
                 src={mentorPhoto} 
                 alt="Mentora - Especialista em Design de Carrosseis"
-                className="w-64 h-64 rounded-lg object-cover shadow-elegant"
+                className="w-full max-w-xs sm:w-72 sm:h-72 md:w-96 md:h-96 h-auto rounded-lg object-cover shadow-elegant"
               />
             </div>
             
-            <div>
+            <div className="w-full">
               <h3 className="text-3xl font-bold text-secondary mb-2">
-                Ana Carolina Rodrigues
+                Laila Almeida @lailarte_
               </h3>
               <p className="text-lg text-primary mb-4 font-semibold">
                 Especialista em Marketing Digital & Design Estratégico
@@ -38,7 +38,7 @@ export const MentorSection = () => {
                 <p className="leading-relaxed">
                   Criei o <strong>Arquivo Secreto do Carrossel Finesse</strong> depois de perceber que meus alunos 
                   gastavam horas criando designs do zero. Agora, eles criam carrosseis profissionais em minutos 
-                  e aumentam seu engajamento em até <strong>300%</strong>.
+                  e aumentam seu engajamento em até <strong>200%</strong>.
                 </p>
                 
                 <div className="pt-4 border-t border-border mt-6">
@@ -46,11 +46,11 @@ export const MentorSection = () => {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <span className="text-primary">✓</span>
-                      <span>+5.000 alunos transformados</span>
+                      <span> +100 empresas atendidas</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="text-primary">✓</span>
-                      <span>Média de 300% de aumento em engajamento</span>
+                      <span>Média de 200% de aumento em engajamento</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="text-primary">✓</span>

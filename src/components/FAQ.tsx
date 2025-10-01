@@ -45,7 +45,7 @@ export const FAQ = () => {
           </p>
         </div>
         
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-4 w-full">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 

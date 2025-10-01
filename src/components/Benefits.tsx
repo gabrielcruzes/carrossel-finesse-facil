@@ -1,6 +1,12 @@
 import { Card } from "@/components/ui/card";
 
-const benefits = [
+type Benefit = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
+const benefits: Benefit[] = [
   {
     icon: "⚡",
     title: "Economia de Tempo",
@@ -29,7 +35,7 @@ const benefits = [
   {
     icon: "🔄",
     title: "Fácil Personalização",
-    description: "Edite textos, cores e imagens facilmente"
+    description: "Edite textos, cores e imagens facilmente, mesmo sem o Canva PRO"
   }
 ];
 
@@ -46,9 +52,9 @@ export const Benefits = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <Card key={index} className="p-8 text-center hover:shadow-elegant transition-all duration-300 hover:scale-105">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+          {benefits.map((benefit) => (
+            <Card key={benefit.title} className="w-full h-full p-8 text-center hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <div className="text-4xl mb-4">{benefit.icon}</div>
               <h3 className="text-xl font-bold text-secondary mb-3">{benefit.title}</h3>
               <p className="text-muted-foreground">{benefit.description}</p>

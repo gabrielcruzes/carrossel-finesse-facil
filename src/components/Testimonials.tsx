@@ -30,9 +30,9 @@ export const Testimonials = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 w-full">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 hover:shadow-elegant transition-all duration-300">
+            <Card key={testimonial.name} className="w-full h-full p-8 hover:shadow-elegant transition-all duration-300">
               <div className="flex items-center gap-4 mb-6">
                 <img 
                   src={testimonial.image} 

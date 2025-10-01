@@ -2,104 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+   Use hex codes for easy swapping between palettes. */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    --background: #ffffff;
+    --foreground: #0d0d0d;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 5%;
+    --card: #fafafa;
+    --card-foreground: #0d0d0d;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover: #ffffff;
+    --popover-foreground: #0d0d0d;
 
-    --primary: 0 87% 27%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 0 87% 37%;
+    --primary: #360505;
+    --primary-foreground: #fafafa;
+    --primary-glow: #790000;
     
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: #1a1a1a;
+    --secondary-foreground: #fafafa;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
 
-    --accent: 0 87% 55%;
-    --accent-foreground: 0 0% 98%;
+    --accent: #9e2121;
+    --accent-foreground: #fafafa;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 87% 27%;
+    --border: #e6e6e6;
+    --input: #e6e6e6;
+    --ring: #810909;
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 98%;
+    --success: #16a249;
+    --success-foreground: #fafafa;
 
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
-    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.2);
+    --gradient-hero: linear-gradient(135deg, var(--primary), var(--primary-glow));
+    --gradient-cta: linear-gradient(135deg, var(--accent), var(--primary));
+    --shadow-elegant: 0 10px 30px -10px rgba(129, 9, 9, 0.3);
+    --shadow-glow: 0 0 40px rgba(240, 40, 40, 0.2);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: #fafafa;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: #3f3f46;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: #18181b;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: #fafafa;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: #f4f4f5;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: #18181b;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: #e5e7eb;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: #3b82f6;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: #020817;
+    --foreground: #f8fafc;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: #020817;
+    --card-foreground: #f8fafc;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: #020817;
+    --popover-foreground: #f8fafc;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: #f8fafc;
+    --primary-foreground: #0f172a;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #f8fafc;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #cbd5e1;
+    --sidebar-background: #18181b;
+    --sidebar-foreground: #f4f4f5;
+    --sidebar-primary: #1d4ed8;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #27272a;
+    --sidebar-accent-foreground: #f4f4f5;
+    --sidebar-border: #27272a;
+    --sidebar-ring: #3b82f6;
   }
 }
 
@@ -110,5 +109,23 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-slide-in-left {
+    animation: slide-in-left 0.9s ease-out forwards;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

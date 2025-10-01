@@ -13,12 +13,12 @@ export const ProductShowcase = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-10 items-center mb-12 w-full">
+          <div className="w-full">
             <img 
               src={carouselExamples} 
               alt="Exemplos de Templates de Carrossel" 
-              className="rounded-2xl shadow-elegant"
+              className="w-full max-w-full h-auto rounded-2xl shadow-elegant"
             />
           </div>
           <div className="space-y-6">

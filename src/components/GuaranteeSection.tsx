@@ -5,17 +5,17 @@ export const GuaranteeSection = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto max-w-5xl px-4">
-        <Card className="p-8 lg:p-12 bg-gradient-to-br from-primary/5 to-background border-2 border-primary/20">
-          <div className="grid md:grid-cols-[200px,1fr] gap-8 items-center">
-            <div className="mx-auto">
+        <Card className="w-full p-8 lg:p-12 bg-gradient-to-br from-primary/5 to-background border-2 border-primary/20">
+          <div className="grid md:grid-cols-[200px,1fr] gap-8 items-center w-full">
+            <div className="mx-auto w-full flex justify-center md:justify-start">
               <img 
                 src={guaranteeBadge} 
                 alt="Garantia de 7 dias"
-                className="w-48 h-48 object-contain drop-shadow-lg"
+                className="w-40 h-auto md:w-48 md:h-48 max-w-full object-contain drop-shadow-lg"
               />
             </div>
             
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left w-full">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
                 Garantia Incondicional de 7 Dias
               </h2>
